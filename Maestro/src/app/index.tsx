@@ -1,10 +1,20 @@
-import { View, Text } from "react-native"
+import { View, Text, ScrollView } from "react-native"
+import Constants from 'expo-constants'
+
+const statusBarHeight = Constants.statusBarHeight;
 
 const Home = () => {
     return (
-        <View className=''>
-            <Text>Teste</Text>
-        </View>
+        <>
+            <ScrollView>
+                <View 
+                className='px-10'
+                style={{ marginTop: statusBarHeight + 8 }}
+                >
+                    <Text>Teste</Text>
+                </View>
+            </ScrollView>
+        </>
     )
 }
 
